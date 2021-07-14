@@ -24,6 +24,16 @@ const SlicemasterStyles = styled.div`
     position: relative;
     z-index: 2;
   }
+  .description {
+    background: var(--yellow);
+    padding: 1rem;
+    margin: 2rem;
+    margin-top: -6rem;
+    z-index: 2;
+    position: relative;
+    transform: rotate(1deg);
+    text-align: center;
+  }
 `;
 
 export default function SliceMastersPage({ data }) {
