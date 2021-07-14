@@ -82,12 +82,19 @@ async function fetchBeersandTurnIntoNodes({
         contentDigest: createContentDigest(beer),
       },
     };
+    // 3. Create a node for that beer
     actions.createNode({
       ...beer,
       ...nodeMeta,
     });
   }
-  // 3. Create a node for that beer
+}
+
+async function turnSlicemastersIntoPages({ graphql, actions }) {
+  // 1. Query all slicemasters
+  // 2. Turn each slicemaster into their own page
+  // 3. Figure out how many paiges there are based on how many slicemasterss there are, and how many per page
+  // 4. Loop from 1 to n and create pages for them
 }
 
 export async function sourceNodes(params) {
@@ -101,6 +108,7 @@ export async function createPages(params) {
   await Promise.all([
     turnPizzasIntoPages(params),
     turnToppingsIntoPages(params),
+    turnSlicemastersIntoPages(params),
   ]);
   // 1. Pizzas
   // 2. Toppings
