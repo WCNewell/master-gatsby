@@ -77,6 +77,7 @@ export const query = graphql`
           current
         }
         description {
+          _key
           current
         }
         image {
