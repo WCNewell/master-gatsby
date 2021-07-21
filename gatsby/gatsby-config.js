@@ -6,7 +6,8 @@ export default {
   siteMetadata: {
     title: `Slicks Slices`,
     siteUrl: 'https://gatsby.pizza',
-    description: 'The best pizza place ever!',
+    description: 'The best pizza place in GatsbyLand!',
+    twitter: '@slicksSlices',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
