@@ -41,7 +41,7 @@ export default function usePizza({ pizzas, values }) {
       total: formatMoney(calculateOrderTotal(order, pizzas)),
       name: values.name,
       email: values.email,
-      mapleSyrup: values.mapleSyrup,
+      flyPaper: values.flyPaper,
     };
     // 4. Send this data to a function when they check out
     const res = await fetch(

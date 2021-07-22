@@ -16,6 +16,7 @@ export default function OrderPage({ data }) {
   const { values, updateValue } = useForm({
     name: '',
     email: '',
+    flyPaper: '',
   });
   const {
     order,
@@ -58,6 +59,14 @@ export default function OrderPage({ data }) {
               onChange={updateValue}
             />
           </label>
+          <input
+            type="flyPaper"
+            name="flyPaper"
+            id="flyPaper"
+            value={values.flyPaper}
+            onChange={updateValue}
+            className="flyPaper"
+          />
         </fieldset>
         <fieldset className="menu" disabled={loading}>
           <legend>Menu</legend>
