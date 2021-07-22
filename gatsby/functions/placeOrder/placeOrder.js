@@ -10,10 +10,17 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Test send an email
-transporter.sendMail({
-  from: "Slick's Slices <slick@example.com>",
-  to: 'orders@example.com',
-  subject: 'New Order',
-  html: `<p>Your new pizza order is here!</p>`,
-});
+exports.handler = async (event, context) => {
+  // Test send an email
+  const info = await transporter.sendMail({
+    from: "Slick's Slices <slick@example.com>",
+    to: 'orders@example.com',
+    subject: 'New Order',
+    html: `<p>Your new pizza order is here!</p>`,
+  });
+  console.log(info);
+  return {
+    statusCode: 200,
+    body: JSON.stringify(info),
+  };
+};
