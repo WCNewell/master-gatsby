@@ -18,6 +18,6 @@ export default function Sidebar() {
             .documentId('downtown')
         ),
       // add in the rest of our document items
-      ...S.documentTypeListItems(),
+      ...S.documentTypeListItems().filter(item => item.getId() !== 'storeSettings'),
     ]);
 }
