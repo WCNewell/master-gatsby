@@ -42,14 +42,14 @@ const LogoStyles = styled.div`
     letter-spacing: 0.2em;
     transform: translateY(-0.15em);
   }
-  .slicks {
+  .clarks {
     transform: scale(1.4);
     display: block;
     text-shadow: 0.18em 0.18em 0 rgba(0, 0, 0, 0.05);
     perspective: 100px;
   }
   .letter {
-    font-size: 5em;
+    font-size: 4em;
     color: var(--red);
     --scale: 1;
     --rotate: -10deg;
@@ -62,7 +62,7 @@ const LogoStyles = styled.div`
     display: inline-block;
     line-height: 1;
     transition: transform 0.3s;
-    &.S {
+    &.C {
       --translateX: -0.05;
     }
     &.l {
@@ -71,12 +71,12 @@ const LogoStyles = styled.div`
       --translateX: 0.05em;
       --translateY: -0.05em;
     }
-    &.i {
+    &.a {
       --scale: 0.9;
       --translateY: -0.1em;
       --translateX: 0.1em;
     }
-    &.c {
+    &.r {
       --rotate: 3deg;
       --scale: 0.9;
       --translateX: 0.1em;
@@ -104,11 +104,11 @@ export default function Logo() {
       <div className="inner">
         <span className="est">EST 1994</span>
         <h1>
-          <span className="slicks">
-            <span className="letter C">S</span>
+          <span className="clarks">
+            <span className="letter C">C</span>
             <span className="letter l">l</span>
-            <span className="letter a">i</span>
-            <span className="letter r">c</span>
+            <span className="letter a">a</span>
+            <span className="letter r">r</span>
             <span className="letter k">k</span>
             <span className="letter apos">'</span>
             <span className="letter s">s</span>
