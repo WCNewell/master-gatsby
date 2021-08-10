@@ -15,6 +15,7 @@ const ToppingsStyles = styled.div`
     padding: 5px;
     background: var(--grey);
     border-radius: 2px;
+    font-size: clamp(1.5rem, 1vw, 2.5rem);
     .count {
       background: white;
       padding: 2px 5px;
@@ -55,7 +56,7 @@ function countPizzasInToppings(pizzas) {
 
 export default function ToppingsFilter({ activeTopping }) {
   // Get a list of the toppings
-  // Get a list of all the pizzas and their topings
+  // Get a list of all the pizzas and their toppings
   const { pizzas } = useStaticQuery(graphql`
     query {
       pizzas: allSanityPizza {
