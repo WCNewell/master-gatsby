@@ -60,7 +60,7 @@ export default function SliceMastersPage({ data, pageContext }) {
               </h2>
             </Link>
             <Img fluid={person.image.asset.fluid} />
-            <p className="description">{person.description.current}</p>
+            <p className="description">{person.description}</p>
           </SlicemasterStyles>
         ))}
       </SlicemasterGrid>
@@ -78,10 +78,7 @@ export const query = graphql`
         slug {
           current
         }
-        description {
-          _key
-          current
-        }
+        description
         image {
           asset {
             fluid(maxWidth: 410) {

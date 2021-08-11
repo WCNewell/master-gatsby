@@ -25,7 +25,7 @@ export default {
     {
       name: 'description',
       title: 'Description',
-      type: 'slug',
+      type: 'text',
       desription: 'Tell us about this person',
     },
     {
