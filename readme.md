@@ -1,5 +1,9 @@
 ![Master Gatbsy](https://res.cloudinary.com/wesbos/image/upload/c_scale,q_auto,w_1600/v1600356131/GAT-social-share_rxvhdg.png)
 
+# Result of "Master Gatsby" tutorial created by the infamous Wes Bos. 
+
+This sample website for a pizza restaurant is the result of following video tutorials line by line as presented by Wes Bos in his "Master Gatsby" course. This resulted in a frontend created with the Gatsby framework built on the React library along with a database studio built with Sanity.io as the backend. The main purpose of this video was to review some changes made to Gatsby since I last worked with it. I also wanted to get to know the content platform Sanity.io as an alternative to WordPress. This course was excellent, very well designed, easy to follow and I believe provided a review and fundamentals I needed to proceed with personal projects. The backend is deployed and hosted at Sanity.io. The frontend is deployed and hosted by Netlify at [clarks-slices.netlify.app](https://clarks-slices.netlify.app)
+
 # Master Gatsby
 
 A Premium JavaScript + CSS Training Course from Wes Bos. You can grab the course at [MasterGatsby.com](https://mastergatsby.com).
