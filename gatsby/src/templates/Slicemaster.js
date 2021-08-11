@@ -13,7 +13,7 @@ export default function SlicemasterPage({ data: { person } }) {
         <h2>
           <span className="mark">{person.name}</span>
         </h2>
-        <p>{person.description.current}</p>
+        <p>{person.description}</p>
       </div>
     </>
   );
@@ -24,10 +24,7 @@ export const query = graphql`
     person: sanityPerson(slug: { current: { eq: $slug } }) {
       name
       id
-      description {
-        _key
-        current
-      }
+      description
       image {
         asset {
           fluid(maxWidth: 1000, maxHeight: 750) {
