@@ -8,6 +8,7 @@ const PaginationStyles = styled.div`
   align-items: center;
   justify-items: center;
   border: 1px solid var(--grey);
+  margin: 2rem 0;
   border-radius: 5px;
   text-align: center;
   & > * {
@@ -36,9 +37,9 @@ export default function Pagination({
   pageSize,
   totalCount,
   currentPage,
-  skip,
   base,
 }) {
+  // make some variables
   const totalPages = Math.ceil(totalCount / pageSize);
   const prevPage = currentPage - 1;
   const nextPage = currentPage + 1;
@@ -47,16 +48,17 @@ export default function Pagination({
   return (
     <PaginationStyles>
       <Link
-        title="Previous Page"
+        title="Prev Page"
         disabled={!hasPrevPage}
-        to={`/${base}/${prevPage}`}
+        to={`${base}/${prevPage}`}
       >
-        &#8592; <span className="word">Prev</span>
+        ← <span className="word">Prev</span>
       </Link>
       {Array.from({ length: totalPages }).map((_, i) => (
         <Link
           className={currentPage === 1 && i === 0 ? 'current' : ''}
           to={`${base}/${i > 0 ? i + 1 : ''}`}
+          key={`page${i}`}
         >
           {i + 1}
         </Link>
@@ -64,9 +66,9 @@ export default function Pagination({
       <Link
         title="Next Page"
         disabled={!hasNextPage}
-        to={`/${base}/${nextPage}`}
+        to={`${base}/${nextPage}`}
       >
-        <span className="word">Next</span> &#8594;
+        <span className="word">Next</span> →
       </Link>
     </PaginationStyles>
   );
