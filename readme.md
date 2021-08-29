@@ -1,6 +1,6 @@
 ![Master Gatbsy](https://res.cloudinary.com/wesbos/image/upload/c_scale,q_auto,w_1600/v1600356131/GAT-social-share_rxvhdg.png)
 
-# Result of "Master Gatsby" tutorial created by the infamous Wes Bos. 
+# Result of "Master Gatsby" tutorial created by the infamous Wes Bos deployed to Netlify:
 
 [clarks-slices.netlify.app](https://clarks-slices.netlify.app)
 
